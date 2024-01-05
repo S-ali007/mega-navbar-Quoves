@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 import SignupForm from "../signup/SignupForm";
 import LoginForm from "./LoginForm";
 
@@ -28,10 +28,17 @@ const Login = ({ login }) => {
           <img src="/wave_signup-asset.svg" alt="" className="absolute z-10" />
 
           <div className="max-w-[736px] w-full absolute mt-[-156px] ml-[46px] z-20">
-            <img
+            {/* <img
               src="/cartoon_Signup-asset.svg"
               alt=""
               className="mt-[-16px] "
+            /> */}
+
+            <Image
+              src="/proventrack_assets/hero-degree-cut.png"
+              width={500}
+              height={500}
+              alt=""
             />
           </div>
           <div

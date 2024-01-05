@@ -21,15 +21,122 @@ const Header = ({ children, extraClasses }) => {
             className={`${extraClasses} max-w-[1680px] w-full  flex  justify-between  mx-auto px-[180px]  `}
           >
             <div className="flex gap-[48px] text-[#FFF] py-[30px]   items-center font-[600] ">
-              <a href="/" className="max-w-[158px] w-full  ">
-                <img
-                  src="/header_assets/BLACKALGO  logo.svg"
-                  alt="Logo - BLACKALGO"
-                />
+              <a
+                href="/"
+                className="max-w-[158px] w-full flex items-center align-middle gap-[5px] "
+              >
+                <svg
+                  width="31"
+                  height="29"
+                  viewBox="0 0 31 29"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.234 0.00132012C13.0648 1.40457 17.8962 2.80649 22.7256 4.20914L5.04102 5.31449C5.41384 4.18132 6.5037 3.02512 6.87652 1.89194C6.93353 1.66586 7.0318 1.38207 7.2051 1.08176C7.5339 0.5128 7.9669 0.17544 8.2347 0L8.234 0.00132012Z"
+                    fill="url(#paint0_linear_1_4)"
+                  />
+                  <path
+                    d="M5.32729 1.73482L1.07185 9.91601C0.73627 10.5616 0.78016 11.3372 1.1851 11.9403L10.0768 25.346C11.9821 21.304 11.5464 16.5523 8.937 12.9196C6.61354 9.68681 5.10923 7.57829 4.95386 7.33593C4.91005 7.26787 4.78752 7.07575 4.78289 6.81652C4.77961 6.58188 4.86892 6.41058 4.911 6.3373C6.00821 4.22632 7.1067 2.11597 8.204 0.00496659C6.99451 -0.00372341 5.88127 0.664257 5.32593 1.73422L5.32729 1.73482Z"
+                    fill="url(#paint1_linear_1_4)"
+                  />
+                  <path
+                    d="M30.0458 17.6982C26.4824 21.2329 22.917 24.7682 19.3535 28.3028C21.8705 22.9868 24.3888 17.6715 26.9057 12.3555C27.7237 13.2268 28.2162 14.7325 29.0341 15.6039C29.2045 15.7621 29.4075 15.9849 29.5893 16.2809C29.931 16.8406 30.0206 17.3832 30.0458 17.6982Z"
+                    fill="url(#paint2_linear_1_4)"
+                  />
+                  <path
+                    d="M29.9209 14.3286L24.7659 6.67751C24.3596 6.0738 23.6551 5.73855 22.9276 5.80147L6.83398 7.0926C9.4753 10.7015 13.8717 12.6108 18.3281 12.0852C22.2954 11.6173 24.877 11.323 25.1665 11.3045C25.2478 11.2988 25.4761 11.2841 25.7054 11.4055C25.9128 11.5153 26.0213 11.6754 26.0646 11.748C27.394 13.7218 28.7247 15.6962 30.0541 17.67C30.6453 16.6197 30.5928 15.3276 29.9196 14.328L29.9209 14.3286Z"
+                    fill="url(#paint3_linear_1_4)"
+                  />
+                  <path
+                    d="M3.4952 27.3319C2.32967 22.4616 1.16549 17.5919 0 12.7217L9.7179 27.4608C8.544 27.7001 6.99564 27.3294 5.82042 27.5681C5.59549 27.6307 5.2986 27.6857 4.9505 27.6853C4.29205 27.6825 3.7818 27.475 3.49712 27.3312L3.4952 27.3319Z"
+                    fill="url(#paint4_linear_1_4)"
+                  />
+                  <path
+                    d="M6.44798 28.9861L15.6989 28.6126C16.4288 28.5827 17.0834 28.1621 17.4111 27.5128L24.7202 13.1894C20.2455 13.5437 16.3114 16.2739 14.4312 20.3274C12.7565 23.9357 11.6599 26.2801 11.5255 26.5345C11.4879 26.605 11.3807 26.808 11.1565 26.938C10.9535 27.057 10.7588 27.0649 10.676 27.0635C8.2892 27.1599 5.90242 27.2563 3.51562 27.3527C4.10761 28.4028 5.24155 29.0331 6.44994 28.9854L6.44798 28.9861Z"
+                    fill="url(#paint5_linear_1_4)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_1_4"
+                      x1="21.2205"
+                      y1="4.10411"
+                      x2="6.70811"
+                      y2="2.20927"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0862FF" />
+                      <stop offset="1" stop-color="#070860" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint1_linear_1_4"
+                      x1="12.7381"
+                      y1="17.7918"
+                      x2="0.32733"
+                      y2="10.986"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#CBEF9B" />
+                      <stop offset="0.145833" stop-color="#53E894" />
+                      <stop offset="0.5" stop-color="#11B7EC" />
+                      <stop offset="1" stop-color="#0862FF" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint2_linear_1_4"
+                      x1="19.524"
+                      y1="27.9166"
+                      x2="27.9407"
+                      y2="14.0016"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0862FF" />
+                      <stop offset="1" stop-color="#070860" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint3_linear_1_4"
+                      x1="14.8113"
+                      y1="13.6665"
+                      x2="24.3846"
+                      y2="5.92902"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#CBEF9B" />
+                      <stop offset="0.145833" stop-color="#53E894" />
+                      <stop offset="0.5" stop-color="#11B7EC" />
+                      <stop offset="1" stop-color="#0862FF" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint4_linear_1_4"
+                      x1="-0.0798898"
+                      y1="12.7291"
+                      x2="6.64641"
+                      y2="27.5687"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#0862FF" />
+                      <stop offset="1" stop-color="#070860" />
+                    </linearGradient>
+                    <linearGradient
+                      id="paint5_linear_1_4"
+                      x1="19.7128"
+                      y1="14.4166"
+                      x2="14.6713"
+                      y2="28.6836"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#CBEF9B" />
+                      <stop offset="0.145833" stop-color="#53E894" />
+                      <stop offset="0.5" stop-color="#11B7EC" />
+                      <stop offset="1" stop-color="#0862FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <div className="text-[20px]">DVS</div>
               </a>
-              <a href="#Performance">Performance</a>
+              {/* <a href="#Performance">Performance</a>
               <a href="/strategy">Strategies</a>
-              <a href="#About">About</a>
+              <a href="#About">About</a> */}
             </div>
 
             <div className="flex max-w-[215px] w-full items-center justify-between">
@@ -39,7 +146,7 @@ const Header = ({ children, extraClasses }) => {
               <Button
                 text={"Get Started"}
                 extraClasses={" bg-gradient-to-r from-[#00BBFF] to-[#4579F5]"}
-                href={"/signup"}
+                href={"/confirmation"}
               />
             </div>
           </div>
@@ -128,7 +235,11 @@ const Header = ({ children, extraClasses }) => {
               </div>
               <div className="max-w-[160px] w-full flex gap-[12px] bg-[#E0E0FF0A] p-[2px] hover:cursor-pointer rounded-[12px] items-center    ">
                 <div className="max-w-[32px] w-full rounded-[12px]">
-                  <img src="/dashboard-user-img.svg" alt=""  className="rounded-[12px]"/>
+                  <img
+                    src="/dashboard-user-img.svg"
+                    alt=""
+                    className="rounded-[12px]"
+                  />
                 </div>
                 <div className="max-w-[100px]  w-full flex gap-[14px] items-center  ">
                   <div className="text-[14px] font-[600] text-[#fff]">

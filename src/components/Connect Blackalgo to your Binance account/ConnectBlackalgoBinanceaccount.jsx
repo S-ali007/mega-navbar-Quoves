@@ -13,7 +13,7 @@ function ConnectBlackalgoBinanceaccount() {
           {/* logo-binance */}
           <div className="z-10">
             <div className="max-w-[648px] w-full ">
-              <img src="/connect/Binance_logo_asset.svg" alt="" />
+              <img src="/connect/Binance_logo_asset1.png" alt="" />
             </div>
           </div>
           <div className="max-w-[1118px] w-full absolute  ">
@@ -28,14 +28,13 @@ function ConnectBlackalgoBinanceaccount() {
             <div
               className={`${popins.className} tracking-[-2px] max-w-[424px] w-full text-[48px] font-[600] leading-[48px] text-[#fff]`}
             >
-              Connect Blackalgo to your Binance account
+             Ethereum BlockChain 
             </div>
             <div className="text-[16px] font-[500] leading-[28px] text-[#E0E0FFCC]">
-              Once you select your preferred trading strategy (Conservative,
-              Balanced, or Dynamic), simply connect your Binance account and
-              your account will automatically copy the trades of our A.I
-              algorithm. Blacklago does not have access to your funds, they
-              remain on your Binance account
+              It's important to note that only the admin has the privilege to
+              add new student records through Ethereum, ensuring the utmost
+              security and control. Your funds always stay secure in your
+              account
             </div>
           </div>
         </div>

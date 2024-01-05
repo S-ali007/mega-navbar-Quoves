@@ -4,20 +4,19 @@ import { popins } from "@/app/layout";
 
 function Hero() {
   return (
-    <div className="w-full flex justify-center  gap-[74px] pt-[290px]  pb-[275px] aboslute " id="/">
+    <div className="w-full flex justify-center  gap-[74px] pt-[209px]  pb-[275px] aboslute " id="/">
       {/* left-div */}
       <div className="max-w-[558px] w-full">
         {/* Main-Heading */}
         <h1
           className={`${popins.className} font-[600]  text-[64px] text-[#fff] leading-[64px]  w-full`}
         >
-          Let Our World-Class AI Trade For You
+          Let Our Decentralized System Verify Your Success.
         </h1>
         {/* Para */}
         <div className="max-w-[347px] w-full font-[500] mt-[64px] leading-[36px]">
           <p className="text-[#E0E0FFCC] text-[20px] ">
-            Revolutionising the Trading Industry With Our Cutting-Edge AI
-            Technology Since 2005
+          Elevate Trust in Education with Our Blockchain Innovation
           </p>
         </div>
         {/* Hero-Buttons */}
@@ -27,7 +26,7 @@ function Hero() {
             <Button
               text={"Get Started"}
               extraClasses={" bg-gradient-to-r from-[#00BBFF] to-[#4579F5] shrink-0"}
-              href={"/signup"}
+              href={"/confirmation"}
             />
               
           </div>

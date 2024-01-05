@@ -13,15 +13,10 @@ function ProvenTraceRecord() {
         <div
           className={`${popins.className} font-[600] text-[#fff] leading-[48px]  text-[48px] `}
         >
-          A Proven Track record Since 2018
+          Established Trust Since 2020
         </div>
         <div className="text-[#E0E0FFCC] leading-[28px] max-w-[424px] w-full text-[16px] font-[500]">
-          Blackalgo,s A.I. Trading Bots have proven to deliver outstanding
-          results, with an average performance of +5.39% per month in the last 4
-          years* (audited track record). This performance stands out as one of
-          the most impressive in the industry. Our customers can access these
-          cutting-edge trading bots and have them copy-trade directly in their
-          own account
+        Our Blockchain Degree Verification System boasts a proven track record, delivering consistent results. Over the past 2 years*, we've maintained an audited success rate, ensuring reliable verification outcomes. Join us for secure and efficient degree validation in the education industry. Your trust, our priority."
         </div>
       </div>
       {/* right-side */}

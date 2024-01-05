@@ -8,23 +8,23 @@ function Whyblackalgo() {
   const maindata = [
     {
       id: 0,
-      title: "Safekeeping ", 
-      title2:"Guaranteed",
+      title: "Security First ", 
+      // title2:"Guaranteed",
       para: "Your funds remain in your",
       para2:" Binance account",
       imgUrl: "/WhyBlackalgo_asset/safekeeping-assets.svg",
     },
     {
       id: 1,
-      title: "Fast & Easy Set Up ",
-      para: "No technical skills required. Select your trading strategy, connect your Binance account and you’re ready to go",
+      title: "Effortless Integration ",
+      para: "No expertise needed. Simply choose your verification preferences, connect to our system, and you're all set to streamline the validation process for your degrees.",
       imgUrl: "/WhyBlackalgo_asset/fastAnd Easy-assets.svg",
     },
     {
       id: 2,
       no: "03",
-      title: "87.75% APY Audited Track Record ",
-      para: "Our performance has been verified by Fxblue.com and are a testament to our A.I algo effectiveness ",
+      title: "Proven Performance ",
+      para: "With an audited track record boasting an 87.75% success rate, verified by [Verification Authority], our system's effectiveness is a testament to its reliability. Your trust in our blockchain technology ensures accurate and efficient degree verification every time.",
       imgUrl: "/WhyBlackalgo_asset/AuditedTrack-assets.svg",
       lnik:"Fxblue.com"
     },
@@ -35,7 +35,7 @@ function Whyblackalgo() {
       <div
         className={`${popins.className} max-w-[312px] w-full text-[48px] font-[600] leading-[48px] tracing-[-2px] text-[#fff]`}
       >
-        Why Blackalgo
+        Why DVS
       </div>
       {/* cards---safeKeeping--fast--trackRecord */}
       {maindata.map((items, id) => {

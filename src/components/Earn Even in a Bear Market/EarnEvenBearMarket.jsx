@@ -19,25 +19,27 @@ function EarnEvenBearMarket() {
             style={gradientStyle}
           ></div>
         </div>
-        <img
+        {/* <img
           src="/EarnEvenBearMarket_assets/Bear_asset.svg"
           alt=""
           className="relative max-w-[513px] w-full mt-[250px] ml-[-40px] "
-        />
+        /> */}
+
+        
       </div>
       {/* right-div-content */}
       <div className="max-w-[424px] w-full  flex justify-center items-center flex-col gap-[48px]">
         <div
           className={` ${popins.className} max-w-[424px] w-full text-[48px] text-[#fff] font-[600] leading-[48px] `}
         >
-          Earn Even in a Bear Market
+          Profit in All Markets
         </div>
         <div className="max-w-[424px] w-full text-[#E0E0FFCC] leading-[28px] text-[16px] font-[500]">
-          Earn profits regardless of market conditions. Unlike traditional
-          trading strategies that mostly benefit when the market is rising, our
-          A.I trading bots are designed to also take advantage of downward
-          market trends. This means that you have the opportunity to earn
-          profits even when the market is experiencing a downturn
+          Our Blockchain Degree Verification System thrives in any academic
+          landscape. Unlike traditional methods that excel in favorable
+          conditions, our technology adapts to downturns, ensuring reliable
+          verification results even in challenging times. Earn trust in all
+          educational scenarios with us.
         </div>
       </div>
     </div>
