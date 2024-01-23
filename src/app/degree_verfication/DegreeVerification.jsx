@@ -7,8 +7,18 @@ import { popins } from "../layout";
 import Link from "next/link";
 import Button from "@/components/Button/Button";
 import DegreeForm from "./DegreeForm";
+import { RxCross2 } from "react-icons/rx";
 
-const DegreeVerification = () => {
+const DegreeVerification = ({ contractInstance, account }) => {
+  const [error, setError] = useState(false);
+
+
+  const existChange = (e) => {
+
+    setError(false);
+
+  };
+
   const gradientStyle = {
     backgroundImage: "linear-gradient(141deg, #000 5.29%, #6CD3FF 101.76%)",
   };
@@ -20,58 +30,144 @@ const DegreeVerification = () => {
       "linear-gradient(90deg, #0E0F12 38.85%, rgba(14, 15, 18, 0.83) 72.19%, rgba(14, 15, 18, 0.00) 100%)",
   };
   return (
-    <div className="max-w-[1280px] w-full flex mt-[184px]  mx-auto">
-      {/* image-section */}
-      <div className="max-w-[867px] w-full absolute z-20">
-        <div
-          className="max-w-[343px] w-full rotate-[39.475deg] mt-[-143px] ml-[155px] blur-[94.5px] h-[915px] "
-          style={gradientdiv1}
-        ></div>
-      </div>
+    <div className="max-w-[1280px] w-full flex   mx-auto">
+      {error ? (
+        <div className="max-w-[1280px] w-full flex justify-center   mx-auto">
+          <div className=" bg-[#15161B]  absolute p-5  w-full max-w-[840px] flex-col  rounded-md flex justify-center align-middle text-center text-[#fff] text-[40px] mt-[200px] z-30">
+            {" "}
+            <div className="text-[#fff] w-full justify-end items-end">
+              <div className=" flex justify-end" >
+                <RxCross2 onClick={existChange} className="cursor-pointer"/>
+              </div>
+            </div>
+            <div className=" w-full flex justify-center items-center ">
+              <img
+                src="https://aust.edu.pk/wp-content/uploads/2022/04/AUST-Logo-e1651042559517.png"
+                alt=""
+              />
+            </div>
+            {error}
+          </div>
 
-      <div className="max-w-[1003px] w-full flex   ">
-        <img src="/wave_signup-asset.svg" alt="" className="absolute z-10" />
+          <div className="blur-[10px] max-w-[1280px] w-full flex mt-[184px]  mx-auto pointer-events-none">
+            <div className="max-w-[867px] w-full absolute z-20">
+              <div
+                className="max-w-[343px] w-full rotate-[39.475deg] mt-[-143px] ml-[155px] blur-[94.5px] h-[915px] "
+                style={gradientdiv1}
+              ></div>
+            </div>
 
-        <div className="max-w-[736px] w-full absolute mt-[-156px] ml-[46px] z-20">
-          <img src="/cartoon_Signup-asset.svg" alt="" className="mt-[-16px] " />
-        </div>
-        <div
-          className="max-w-[140px] min-h-[915px] h-full w-full rotate-[39.47deg] mt-[-164px] ml-[87px] blur-[2.5px] opacity-[0.12]  z-10 "
-          style={gradientStyle}
-        ></div>
-        <div className="max-w-[749px] w-full ml-[-147px] mt-[-72px]  z-10 ">
-          <div
-            className="max-w-[204px] w-full h-[915px] rotate-[39.475deg]  blur-[2.5px] opacity-[0.4]  "
-            style={gradientdiv1}
-          ></div>
-        </div>
-        <div className="max-w-[696px] w-full  ">
-          <div
-            className="max-w-[140px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.4]  ml-[-179px] mt-[-38px]  "
-            style={gradientdiv1}
-          ></div>
-        </div>
-        <div className="max-w-[689px] w-full  ">
-          <div
-            className="max-w-[140.9px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.12]  ml-[-181px] mt-[-43px]  "
-            style={gradientStyle}
-          ></div>
-        </div>
-        <div className="max-w-[665px] w-full ">
-          <div
-            className="max-w-[98.9px] w-full h-[915px] rotate-[39.475deg]  ml-[-328px] mt-[40px]  blur-[2.5px] opacity-[0.12]   "
-            style={gradientStyle}
-          ></div>
-        </div>
-      </div>
-     
-      {/* div-2 */}
+            <div className="max-w-[1003px] w-full flex   ">
+              <img
+                src="/wave_signup-asset.svg"
+                alt=""
+                className="absolute z-10"
+              />
 
-      
-        <DegreeForm/>
-      
+              <div className="max-w-[736px] w-full absolute mt-[-156px] ml-[46px] z-20">
+                <img
+                  src="/cartoon_Signup-asset.svg"
+                  alt=""
+                  className="mt-[-16px] "
+                />
+              </div>
+              <div
+                className="max-w-[140px] min-h-[915px] h-full w-full rotate-[39.47deg] mt-[-164px] ml-[87px] blur-[2.5px] opacity-[0.12]  z-10 "
+                style={gradientStyle}
+              ></div>
+              <div className="max-w-[749px] w-full ml-[-147px] mt-[-72px]  z-10 ">
+                <div
+                  className="max-w-[204px] w-full h-[915px] rotate-[39.475deg]  blur-[2.5px] opacity-[0.4]  "
+                  style={gradientdiv1}
+                ></div>
+              </div>
+              <div className="max-w-[696px] w-full  ">
+                <div
+                  className="max-w-[140px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.4]  ml-[-179px] mt-[-38px]  "
+                  style={gradientdiv1}
+                ></div>
+              </div>
+              <div className="max-w-[689px] w-full  ">
+                <div
+                  className="max-w-[140.9px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.12]  ml-[-181px] mt-[-43px]  "
+                  style={gradientStyle}
+                ></div>
+              </div>
+              <div className="max-w-[665px] w-full ">
+                <div
+                  className="max-w-[98.9px] w-full h-[915px] rotate-[39.475deg]  ml-[-328px] mt-[40px]  blur-[2.5px] opacity-[0.12]   "
+                  style={gradientStyle}
+                ></div>
+              </div>
+            </div>
 
-     
+            <DegreeForm
+              contractInstance={contractInstance}
+              account={account}
+              setError={setError}
+            />
+          </div>
+        </div>
+      ) : (
+        <div className="max-w-[1280px] w-full flex mt-[184px]  mx-auto">
+          <div className="max-w-[867px] w-full absolute z-20">
+            <div
+              className="max-w-[343px] w-full rotate-[39.475deg] mt-[-143px] ml-[155px] blur-[94.5px] h-[915px] "
+              style={gradientdiv1}
+            ></div>
+          </div>
+
+          <div className="max-w-[1003px] w-full flex   ">
+            <img
+              src="/wave_signup-asset.svg"
+              alt=""
+              className="absolute z-10"
+            />
+
+            <div className="max-w-[736px] w-full absolute mt-[-156px] ml-[46px] z-20">
+              <img
+                src="/cartoon_Signup-asset.svg"
+                alt=""
+                className="mt-[-16px] "
+              />
+            </div>
+            <div
+              className="max-w-[140px] min-h-[915px] h-full w-full rotate-[39.47deg] mt-[-164px] ml-[87px] blur-[2.5px] opacity-[0.12]  z-10 "
+              style={gradientStyle}
+            ></div>
+            <div className="max-w-[749px] w-full ml-[-147px] mt-[-72px]  z-10 ">
+              <div
+                className="max-w-[204px] w-full h-[915px] rotate-[39.475deg]  blur-[2.5px] opacity-[0.4]  "
+                style={gradientdiv1}
+              ></div>
+            </div>
+            <div className="max-w-[696px] w-full  ">
+              <div
+                className="max-w-[140px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.4]  ml-[-179px] mt-[-38px]  "
+                style={gradientdiv1}
+              ></div>
+            </div>
+            <div className="max-w-[689px] w-full  ">
+              <div
+                className="max-w-[140.9px] w-full h-[915px] rotate-[39.475deg] blur-[2.5px] opacity-[0.12]  ml-[-181px] mt-[-43px]  "
+                style={gradientStyle}
+              ></div>
+            </div>
+            <div className="max-w-[665px] w-full ">
+              <div
+                className="max-w-[98.9px] w-full h-[915px] rotate-[39.475deg]  ml-[-328px] mt-[40px]  blur-[2.5px] opacity-[0.12]   "
+                style={gradientStyle}
+              ></div>
+            </div>
+          </div>
+
+          <DegreeForm
+            contractInstance={contractInstance}
+            account={account}
+            setError={setError}
+          />
+        </div>
+      )}
     </div>
   );
 };

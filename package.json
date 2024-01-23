@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
     "axios": "^1.6.0",
     "chart.js": "^4.4.0",
+    "crypto-js": "^4.2.0",
     "mongoose": "^8.0.0",
     "next": "latest",
     "react": "latest",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.0.1",
     "swiper": "^11.0.3",
     "web3": "^4.3.0"
   },
